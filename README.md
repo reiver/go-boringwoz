@@ -2,7 +2,7 @@
 
 Package **boringwoz** provides a way of creating `"boring_wozniak"` style human-friendly **random-names**, for the Go programming language.
 
-_"boring wozniak"_ style **random-names** are of the following form:
+_"boring_wozniak"_ style **random-names** are of the following form:
 
 	<ADJECTIVE> "_" <SURNAME>
 

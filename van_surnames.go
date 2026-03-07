@@ -16,6 +16,7 @@ var vanSurnames = []string{
 	"azarkhazin",
 	"azizi",
 	"bates",
+	"bergunder",
 	"bogush",
 	"bruskiewicz",
 	"bueza",

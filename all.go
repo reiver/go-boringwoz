@@ -6,7 +6,7 @@ var (
 )
 
 var (
-	nameLength int
+	maxNameLength int
 )
 
 func init() {
@@ -28,10 +28,10 @@ func init() {
 				}
 			}
 
-			nameLength += max
+			maxNameLength += max
 		}
 
-		nameLength += len("_")
+		maxNameLength += len("_")
 
 		{
 			var max int
@@ -44,15 +44,15 @@ func init() {
 				}
 			}
 
-			nameLength += max
+			maxNameLength += max
 		}
 
-		nameLength += len("_")
+		maxNameLength += len("_")
 
-		nameLength += 2
+		maxNameLength += 2
 
-		if nameLength < 32 {
-			nameLength = 32
+		if maxNameLength < 32 {
+			maxNameLength = 32
 		}
 	}
 }

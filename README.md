@@ -48,7 +48,7 @@ import "github.com/reiver/go-boringwoz"
 
 //
 
-name boringwoz.RandomName()
+name boringwoz.RandomName(0)
 ```
 
 And, if you want to use the classic algorith, you can do with with the following:
@@ -58,7 +58,7 @@ import "github.com/reiver/go-boringwoz"
 
 //
 
-name boringwoz.RandomNameClassic()
+name boringwoz.RandomNameClassic(0)
 ```
 
 ## Import

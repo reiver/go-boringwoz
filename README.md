@@ -31,7 +31,7 @@ For example:
 `"boring_wozniak"` style **random-names** are used as an alternative to, for example, naming things using UUIDs.
 It is thought that, `"boring_wozniak"` style **random-names** are easier to recognize (for humans) than, for example, UUIDs.
 
-This package provides both the classic algorithm (with 108 adjectives and 149 surnames), and a new algorithm (with more adjectives and more surnames).
+This package provides both the classic algorithm, and a new algorithm (with more adjectives and more surnames).
 
 ## Documention
 

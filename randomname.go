@@ -81,9 +81,12 @@ func randomName(adjectives []string, surnames []string, forbidden []byte, includ
 	var p []byte = buffer[0:0]
 
 	for {
-		p = append(p, adjectives[randomness.IntN(len(adjectives))]...)
-		p = append(p, '_')
-		p = append(p, surnames[randomness.IntN(len(surnames))]...)
+		var (
+			adjective = adjectives[randomness.IntN(len(adjectives))]
+			surname   = surnames[randomness.IntN(len(surnames))]
+		)
+
+		p = appendBoringWozName(p, adjective, surname)
 
 		if !bytes.Equal(forbidden, p) {
 			break
@@ -102,7 +105,7 @@ func randomName(adjectives []string, surnames []string, forbidden []byte, includ
 	// We do the same for the classic algorithm.
 	//
 	// We use `includeUnderscoreInSuffix` to determine if the classic algorithm is in effect or not.
-	if !includeUnderscoreInSuffix {
+	if 0 < numDigits && !includeUnderscoreInSuffix {
 		numDigits = 1
 	}
 
@@ -114,4 +117,12 @@ func randomName(adjectives []string, surnames []string, forbidden []byte, includ
 	}
 
 	return string(p)
+}
+
+func appendBoringWozName(p []byte, adjective string, surname string) []byte {
+	p = append(p, adjective...)
+	p = append(p, '_')
+	p = append(p, surname...)
+
+	return p
 }

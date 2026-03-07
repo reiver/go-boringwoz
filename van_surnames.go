@@ -11,6 +11,7 @@ var vanSurnames = []string{
 	"akinwumi",
 	"alexander",
 	"ali",
+	"alkhwarizmi",
 	"amalivand",
 	"anderson",
 	"arbabian",

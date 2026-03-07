@@ -46,7 +46,7 @@ Here is an example of generating a **random-name**:
 ```go
 import "github.com/reiver/go-boringwoz"
 
-//
+// ...
 
 name boringwoz.RandomName(0)
 ```
@@ -56,7 +56,7 @@ And, if you want to use the classic algorith, you can do with with the following
 ```go
 import "github.com/reiver/go-boringwoz"
 
-//
+// ...
 
 name boringwoz.RandomNameClassic(0)
 ```

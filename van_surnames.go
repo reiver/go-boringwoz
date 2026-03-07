@@ -44,6 +44,7 @@ var vanSurnames = []string{
 	"eliasi",
 	"ernst",
 	"eshad",
+	"farhadi",
 	"farsi",
 	"fournier",
 	"garcia",

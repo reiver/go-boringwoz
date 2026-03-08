@@ -8,6 +8,10 @@ import (
 
 var randomness *rand.Rand
 
+func init() {
+	initRandomness()
+}
+
 func initRandomness() {
 	var a uint64
 	var b uint64
